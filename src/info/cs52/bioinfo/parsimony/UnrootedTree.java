@@ -1,6 +1,7 @@
 package info.cs52.bioinfo.parsimony;
 
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Set;
 
 public class UnrootedTree {
@@ -27,6 +28,20 @@ public class UnrootedTree {
 		UndirectedTreeEdge edge = new UndirectedTreeEdge(a, b);
 		a.edges.remove(edge);
 		b.edges.remove(edge);
+	}
+	
+	public void removeNode(UnrootedTreeNode a) {
+		for (Iterator<UndirectedTreeEdge> iterator = a.getEdges().iterator(); iterator.hasNext();) {
+			UndirectedTreeEdge edge = iterator.next();
+			iterator.remove();
+			UnrootedTreeNode b = Utils.getOtherEnd(a, edge);
+			b.edges.remove(edge);
+		}
+		nodes.remove(a);
+	}
+	
+	public Set<UnrootedTreeNode> getNodes() {
+		return nodes;
 	}
 	
 }

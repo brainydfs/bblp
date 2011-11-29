@@ -21,4 +21,13 @@ public class UnrootedTreeNode {
 		return edges;
 	}
 	
+	public boolean isLeaf() {
+		return edges.size() <= 1;
+	}
+	
+	@Override
+	public String toString() {
+		return "<" + sequence + ">";
+	}
+	
 }

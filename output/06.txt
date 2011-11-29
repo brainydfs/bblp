@@ -1,0 +1,28 @@
+node 0: null
+node 1: AAGTCGTATATAGCG
+node 2: TAGCTAAAGCCATTG
+node 3: GAGTTAAGGATCCAG
+node 4: null
+node 5: null
+node 6: null
+node 7: ATTGTTACGTAAAAC
+node 8: TTACGTAAAGCGGAT
+node 9: null
+node 10: GGAATTTAGCCATGA
+node 11: GATATTTACCCCATA
+node 12: null
+node 13: CGATATAAGGCCCAG
+edge 0 - 6
+edge 0 - 13
+edge 0 - 12
+edge 12 - 3
+edge 12 - 1
+edge 6 - 9
+edge 6 - 5
+edge 5 - 4
+edge 5 - 2
+edge 4 - 11
+edge 4 - 10
+edge 9 - 7
+edge 9 - 8
+1.569s
